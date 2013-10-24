@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url("common.css");
+/* SITE */
+
+html{
+
+	background: #98e5e2 url(images/bgd_diagStripe_5.png);
+}
+
+body {
+	
+	font: 14px/17px Verdana, Geneva, sans-serif;
+}
+
+h1, h2, h3, h4 {
+
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	line-height:1;
+	margin:0;
+	padding: 0;
+	
+}
+h1 {
+	font-size: 2.25em;
+}
+h2 {
+	font-size: 1.75em;
+}
+h3 {
+	font-size: 1.25em;
+}
+.inlineLabel {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+header {
+	padding: 0 1em;
+	border: 1em solid #74AFAD;
+	background: #98e5e2;
+	border-width: 0 0 1em 0;
+}
+
+header h1 {
+	
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 5em;
+	text-align:right;
+	
+	color: #74AFAD;
+	text-transform: uppercase;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+}
+
+main {
+	position:relative;
+	min-width: 1200px; /*diagram width*/
+	
+	background: #ECECEA;
+	-webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, .3);
+	box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, .3); 
+}
+
+footer {
+	padding: 1em;
+}
+
+.copy {
+	color:#ECECEA;
+	font-weight:bold;
+	
+	display: block;
+	margin: 1em;
+	float:left;
+}
+
+.download {
+	display: block;
+	
+	border-radius: .5em;
+	background:#D9853B;
+	color: white;
+	padding: .3em 1em .3em;
+	margin: 1em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform:uppercase;
+	
+	float:right;
+}
+
+.download:hover {
+	text-decoration:underline;
+}
+
+.download:active {
+	background: rgba(255,204,0,1);
+}
+
+.information {
+	padding: 0 1em;
+}
+
+#cardHolder {
+	position: absolute;
+	top:0;
+	left:75%;
+	width:24%;
+	height: 600px;
+	
+	overflow:hidden;
+	color:#ECECEA;
+}
+
+
+.card {
+	display:none;
+
+	padding:1%;
+	width:100%;
+
+	background:#74AFAD;
+	border-radius: 0 0 .5em .5em;
+	
+
+}
+
+.showCard {
+	display:block;
+	
+	animation: slidein 1s;
+	-webkit-animation: slidein 1s; /* Safari and Chrome */
+}
+
+
+.card h3, .card h2 {
+	width: 100%;
+	padding: 1em 1% 0;
+}
+
+.card ul {
+	margin: 0 1% 0;
+	padding:0;
+	list-style: none;
+}
+
+.card ul li {
+	border: 1px solid  #ECECEA;
+	border-width: 0 0 1px 0;
+	margin: 0 .5em;
+	padding: .5em;
+}
+
+.card ul li:last-child {
+	border-width: 0;
+}
+
+
+
+
+.empList .info {
+	font-style:italic;
+}

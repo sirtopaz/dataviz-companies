@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Companies</title>
+<link href="theme/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header><h1>Companies</h1></header>
+<main>
+
+<section id="visHolder"><div class="information">Hover over or click box to view relationships and details</div></section>
+<section id="cardHolder"></section>
+</main>
+<footer><span class="copy">Designed and Implemented by Sean Gervais &copy; 2013</span><a href="" class="download">Download Source</a></footer>
+<script id="cardTemplate" type="text/x-handlebars-template">
+<div id="cmp_{{id}}" class="card" data-cmp="{{id}}">
+<h2>{{name}}</h2>	
+<h3>Employees</h3>
+<ul id="empList_{{id}}" class="empList"></ul>
+</div>
+</script>
+<script id="employeeTemplate" type="text/x-handlebars-template">
+<li>
+<div class="employee">{{firstName}} {{lastName}}</div>	
+<div class="info">{{information}}</div>
+</li>
+</script>
+
+<script src="js/libs/handlebars.js" type="text/javascript"></script>
+<script src="js/libs/d3.v3.min.js" type="text/javascript"></script>
+<script src="js/site.js" type="text/javascript"></script>
+</body>
+</html>

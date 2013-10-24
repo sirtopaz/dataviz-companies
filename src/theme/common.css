@@ -1,0 +1,76 @@
+/* CSS Document */
+
+@import url("normalize.css");
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* COMMON */
+
+@keyframes backfade
+{
+	from{opacity: 0;}
+	to {opacity:1;}
+}
+
+@-moz-keyframes backfade /* Firefox */
+{
+	from{opacity: 0;}
+	to {opacity:1;}
+}
+
+
+@-webkit-keyframes backfade /* Safari and Chrome */
+{	
+	from{opacity: 0;}
+	to {opacity:1;}
+}
+
+
+@-webkit-keyframes  slidein {
+	0% {
+		-webkit-transform: translateY(-600px);
+	}	
+	
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes slidein {
+	0% {
+		-moz-transform: translateY(-600px);
+	}
+	
+	100% {
+		-moz-transform: translateY(0);
+	}
+}
+
+
+@keyframes slidein {
+	0% {
+		transform: translateY(-600px);
+	}
+	
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+.jHidden {
+	/*hide from jquery dom changes*/
+	visibility:hidden !important;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.invisible {
+	/*opacity: 0 !important;*/
+	visibility:hidden !important;
+}
+
